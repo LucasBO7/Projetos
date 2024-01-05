@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "baDAUQAtUIU5QTs0lKoZtjfS9j2Jd/DsfD/ICVggt3A=",
+  "Source": "webapi.banco.digital",
+  "BasePath": "_content/webapi.banco.digital",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
