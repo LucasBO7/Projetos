@@ -5,9 +5,15 @@ using webapi.banco.digital.Interfaces;
 
 namespace webapi.banco.digital.Repositories
 {
-    public class UsuarioRepository : IUserRepository
+    public class UserRepository : IUserRepository
     {
         private Context _context;
+
+        public UserRepository()
+        {
+            _context = new();
+        }
+
 
         /// <summary>
         /// Register a new User in the data bank
@@ -38,11 +44,11 @@ namespace webapi.banco.digital.Repositories
         /// </summary>
         /// <param name="idAccount">Id da conta do usuário a ser deletado</param>
         /// <exception cref="NotImplementedException"></exception>
-        public void Delete(Guid idAccount)
+        public void Delete(Guid accountNumber)
         {
             try
             {
-                User userFound = _context.Users.FirstOrDefault(u => u.IdAccount == idAccount)!;
+                User userFound = _context.Users.FirstOrDefault(u => u.Account.Number == accountNumber)!;
                 if (userFound != null)
                 {
                     _context.Users.Remove(userFound);

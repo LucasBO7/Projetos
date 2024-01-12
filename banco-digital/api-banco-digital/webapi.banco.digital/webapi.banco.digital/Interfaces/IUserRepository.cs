@@ -7,13 +7,13 @@ namespace webapi.banco.digital.Interfaces
         /// <summary>
         /// Realiza o cadastro de um novo usuário
         /// </summary>
-        /// <param name="novoUsuario">Objeto do tipo Usuario</param>
-        User Register(User novoUsuario);
+        /// <param name="newUser">Objeto do tipo Usuario</param>
+        User Register(User newUser);
 
         /// <summary>
         /// Remove um Usuario (somente um Admin pode e haverá verificações antes de ser concluido)
         /// </summary>
-        /// <param name="id"></param>
-        void Delete(Guid idAccount);
+        /// <param name="accountNumber"></param>
+        void Delete(Guid accountNumber);
     }
 }

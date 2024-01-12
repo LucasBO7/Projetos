@@ -1,7 +1,5 @@
-﻿using Elfie.Serialization;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using webapi.banco.digital.Domains;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace webapi.banco.digital.Infra
 {
